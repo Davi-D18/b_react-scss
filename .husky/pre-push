@@ -12,3 +12,5 @@ elif [ "$LOCAL" = "$BASE" ]; then
     echo "❌ Sua branch está desatualizada, faça um pull antes de fazer o push."
     exit 1
 fi
+
+sleep 1.5
