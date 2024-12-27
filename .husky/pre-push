@@ -7,7 +7,7 @@ BASE=$(git merge-base HEAD @{u})
 
 # Verifica o estado de sincronização
 if [ "$LOCAL" = "$REMOTE" ]; then
-    echo "✅ Tudo sincronizado, pode continuar."
+    echo "✅ Tudo sincronizado, finalizando..."
 elif [ "$LOCAL" = "$BASE" ]; then
     echo "❌ Sua branch está desatualizada, faça um pull antes de fazer o push."
     exit 1
