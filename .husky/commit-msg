@@ -1,1 +1,4 @@
+echo ""
+echo "verificando commit..."
+
 npx --no -- commitlint --edit "$1"
