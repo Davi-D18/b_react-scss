@@ -33,6 +33,7 @@ clear
 echo ""
 echo "🔍 Testando o ambiente de produção..."
 echo ""
+sleep 1.5
 
 # Verificar se o servidor está escutando na porta 4173
 if ! lsof -i :4173 > /dev/null; then
