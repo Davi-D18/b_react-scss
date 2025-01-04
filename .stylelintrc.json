@@ -7,7 +7,12 @@
     "no-duplicate-selectors": true,
     "block-no-empty": true,
     "declaration-block-no-duplicate-properties": true,
-    "selector-class-pattern": "^([a-z0-9-]+)(__[a-z0-9-]+)?(--[a-z0-9-]+)?$",
+    "selector-class-pattern": [
+      "^[a-z0-9]+(?:_[a-z0-9]+)*(?:__[a-z0-9]+(?:_[a-z0-9]+)*(?:\\.[a-zA-Z0-9]+)?)?$",
+      {
+        "message": "O nome da classe do seletor deve seguir o padrão BEM adaptado (bloco__elemento_bloco.modificador)"
+      }
+    ],
     "selector-id-pattern": "^[a-z0-9-]+$",
     "no-unknown-animations": true,
     "no-descending-specificity": null,
