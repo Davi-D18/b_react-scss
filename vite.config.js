@@ -1,16 +1,9 @@
 import react from '@vitejs/plugin-react'
 import path from 'path'
 import { defineConfig } from 'vite'
-import purgecss from 'vite-plugin-purgecss'
 
 export default defineConfig({
-  plugins: [
-    react(),
-    purgecss({
-      content: ['./src/**/*.html', './src/**/*.jsx'],
-      safelist: ['a'] // Adicione classes que você quer manter
-    })
-  ],
+  plugins: [react()],
   resolve: {
     alias: {
       '@c': path.resolve('./src/components'),
